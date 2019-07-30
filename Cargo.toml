@@ -1,0 +1,21 @@
+[package]
+name = "quantic"
+version ="0.1.0"
+authors = ["David Kushner <root@davidkushner.me>"]
+keywords = ["quant", "finance", "trading", "derivatives"]
+description = "Quantified finance library written in Rust."
+repository = "https://github.com/dkushner/quantic"
+
+[workspace]
+members = [
+    "quantic_core",
+    "quantic_derive"
+]
+
+[dependencies]
+quantic_core = { path = "quantic_core", version = "0.1.0" }
+quantic_derive = { path = "quantic_derive", version = "0.1.0" }
+
+[[example]]
+name = "custom_calendar"
+path = "examples/custom_calendar/main.rs"

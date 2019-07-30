@@ -1,0 +1,10 @@
+[package]
+name = "quantic_core"
+version = "0.1.0"
+authors = ["David Kushner <root@davidkushner.me>"]
+edition = "2018"
+
+[dependencies]
+futures = "0.1"
+chrono = "0.4"
+quantic_derive = { path = "../quantic_derive", version = "0.1.0" }
